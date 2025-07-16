@@ -1,0 +1,111 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './components/ui/swiper-custom.css';
+
+@layer base {
+  :root {
+    /* New color palette */
+    --old-rose: 356 22% 56%; /* #A57175 */
+    --dark-teal: 182 100% 8%; /* #00282A */
+    --mustard-yellow: 51 100% 35%; /* #B09B00 */
+    --dark-red: 0 100% 35%; /* #B00000 */
+    --burnt-orange: 16 69% 60%; /* #E8774D */
+    --light-beige: 41 26% 76%; /* #CFC1A7 */
+    
+    /* Semantic color tokens using the new palette */
+    --background: 41 26% 76%; /* light beige */
+    --foreground: 182 100% 8%; /* dark teal */
+    --card: 0 0% 100%;
+    --card-foreground: 182 100% 8%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 182 100% 8%;
+    --primary: 356 22% 56%; /* old rose */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 41 26% 76%; /* light beige */
+    --secondary-foreground: 182 100% 8%;
+    --muted: 41 26% 86%; /* lighter beige */
+    --muted-foreground: 182 50% 25%;
+    --accent: 16 69% 60%; /* burnt orange */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 100% 35%; /* dark red */
+    --destructive-foreground: 0 0% 100%;
+    --border: 41 26% 86%;
+    --input: 0 0% 100%;
+    --ring: 356 22% 56%;
+    --chart-1: 356 22% 56%; /* old rose */
+    --chart-2: 182 100% 8%; /* dark teal */
+    --chart-3: 51 100% 35%; /* mustard yellow */
+    --chart-4: 16 69% 60%; /* burnt orange */
+    --chart-5: 0 100% 35%; /* dark red */
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 182 100% 8%;
+    --sidebar-primary: 356 22% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 41 26% 86%;
+    --sidebar-accent-foreground: 182 100% 8%;
+    --sidebar-border: 41 26% 86%;
+    --sidebar-ring: 356 22% 56%;
+  }
+
+  .dark {
+    --background: 182 100% 8%; /* dark teal */
+    --foreground: 41 26% 76%; /* light beige */
+    --card: 182 50% 12%;
+    --card-foreground: 41 26% 76%;
+    --popover: 182 50% 12%;
+    --popover-foreground: 41 26% 76%;
+    --primary: 356 22% 56%; /* old rose */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 182 50% 15%;
+    --secondary-foreground: 41 26% 76%;
+    --muted: 182 50% 15%;
+    --muted-foreground: 41 26% 66%;
+    --accent: 16 69% 60%; /* burnt orange */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 100% 35%; /* dark red */
+    --destructive-foreground: 0 0% 100%;
+    --border: 182 50% 15%;
+    --input: 182 50% 15%;
+    --ring: 356 22% 56%;
+    --chart-1: 356 22% 56%; /* old rose */
+    --chart-2: 51 100% 35%; /* mustard yellow */
+    --chart-3: 16 69% 60%; /* burnt orange */
+    --chart-4: 41 26% 76%; /* light beige */
+    --chart-5: 0 100% 35%; /* dark red */
+    --sidebar-background: 182 100% 8%;
+    --sidebar-foreground: 41 26% 76%;
+    --sidebar-primary: 356 22% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 182 50% 15%;
+    --sidebar-accent-foreground: 41 26% 76%;
+    --sidebar-border: 182 50% 15%;
+    --sidebar-ring: 356 22% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+/* Prevent horizontal scrolling on mobile */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  .container {
+    overflow-x: hidden;
+  }
+}
