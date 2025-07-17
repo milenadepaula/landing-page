@@ -33,7 +33,7 @@ const Header = () => {
           </nav>
 
           <Button className="hidden md:block bg-[#ffffff] hover:bg-[#C48751] hover:text-[#ffffff] text-[#F07B4C]">
-            Agendar sessão
+            <a href="https://wa.me/+554188618118?text=Olá,%20visitei%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20sessão%20de%20terapia!%20Obrigado" target="blank">Agendar sessão</a>
           </Button>
 
           {/* Mobile Menu Button */}
