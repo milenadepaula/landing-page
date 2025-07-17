@@ -77,7 +77,7 @@ const AboutSection = () => {
             <h3 className="font-bold mb-4 text-primary-foreground text-xl">A psicoterapia é um espaço seguro para acolher suas dores, compreender sua história e construir caminhos de cura, autoconhecimento e transformação.</h3>
             
             <div className="flex justify-center gap-8 text-sm text-muted-foreground">
-              <span className="text-primary-foreground underline text-lg"><a href="https://wa.me/+5511987654321?text=Olá,%20visitei%20seu%20site%20e%20gostaria%20de%20saber%20mais%20informações%20sobre%20as%20sessões%20de%20terapia!%20Obrigado" target='blank'>Agende sua primeira sessão</a></span>
+              <span className="text-primary-foreground underline text-lg"><a href="https://wa.me/+554188618118?text=Olá,%20visitei%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20sessão%20de%20terapia!%20Obrigado" target="blank" target='blank'>Agende sua primeira sessão</a></span>
             </div>
           </div>
         </div>
