@@ -84,9 +84,6 @@ const AboutSection = () => {
 
         {/* Photo Carousel */}
         <div id="ambiente" className="mt-20 animate-fade-in">
-          <h3 className="font-bold text-center text-[#E8774D] mb-12 text-4xl">
-            Conheça mais sobre mim
-          </h3>
           <div className="max-w-6xl mx-auto">
             <Swiper modules={[Navigation, Pagination]} spaceBetween={20} slidesPerView={1} navigation={{
             prevEl: '.swiper-button-prev-custom',
