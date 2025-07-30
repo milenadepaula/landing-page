@@ -93,18 +93,26 @@ const ServicesSection = () => {
               Seja bem-vinda(o) ao meu espaço. Aqui, a escuta é ferramenta e caminho, e cada história é levada a sério.
             </h2>
             <p className="text-foreground mb-6 leading-relaxed text-lg">
-              Sou Milena, psicóloga clínica com uma alma acolhedora e um olhar atento às profundezas da psique.
-              Minha base é a psicologia analítica (junguiana), integrada aos meus estudos em gênero, questões alimentares e imagem corporal — temas que me atravessam como mulher e que trago com muito cuidado e consciência para a clínica.
+              Sou Milena, psicóloga clínica com base na psicologia analítica (junguiana) e com escuta sensível às questões de gênero, corpo e alimentação. Esses temas atravessam minha própria história como mulher e estão no centro do meu trabalho clínico.
+            </p>
+            <p className="text-foreground mb-6 leading-relaxed text-lg">
+              Atendo pessoas que desejam transformar suas relações com o corpo, a comida e os vínculos afetivos, buscando compreender o que as paralisa e encontrar formas mais livres e inteiras de viver. Meu trabalho não se limita ao alívio dos sintomas: mergulhamos no inconsciente, atravessamos sonhos, mitos e símbolos, ajudando cada pessoa a se reconectar com sua alma e a encontrar sentido em sua jornada.            </p>
+            <p className="text-foreground mb-6 leading-relaxed text-lg">
+              Além da clínica, também desenvolvo conteúdos, palestras e consultorias para empresas e instituições, sempre com um olhar atento à saúde mental, à subjetividade e à cultura.
+            </p>
+          </div>
+        </div>
 
-            </p>
-            <p className="text-foreground mb-6 leading-relaxed text-lg">
-              Ao longo da minha trajetória, tenho acompanhado pessoas que desejam transformar suas relações com o corpo e com a alimentação. E, pessoas que buscam compreender suas dinâmicas de relacionamentos para enfrentar a autocrítica e a autocobrança que as paralisam. Meu trabalho busca ir além dos sintomas, explorando os símbolos, os sonhos e os mitos que nos habitam, para que cada pessoa possa viver de forma mais inteira, livre e criativa.
-            </p>
-            <p className="text-foreground mb-6 leading-relaxed text-lg">
-              Acredito que o processo terapêutico é um caminho profundo e também poético, que nos reconecta com a própria alma e nos dá ferramentas para enfrentar a realidade com mais segurança e sentido.
-            </p>
-            <p className="text-foreground mb-6 leading-relaxed text-lg">
-              Também atuo em parceria com empresas e instituições acadêmicas, desenvolvendo conteúdos, palestras e consultorias voltadas à saúde mental  — com olhar atento às questões de gênero, subjetividade e cultura.            </p>
+        {/* Imagem da psicóloga */}
+        <div className="mb-20 animate-fade-in">
+          <div className="max-w-5xl mx-auto">
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+              <img alt="Psicóloga em ambiente relaxante" src="/images/foto-milena-12.jpg" className="w-full h-80 lg:h-96 object-cover" />
+              <div className="absolute bottom-8 left-8 text-primary-foreground bg-[#00282A] p-4 rounded-lg">
+                <h3 className="text-2xl lg:text-3xl font-bold">Milena de Paula</h3>
+                <p className="text-lg opacity-90">Psicóloga CRP 08/39929</p>
+              </div>
+            </div>
           </div>
         </div>
 

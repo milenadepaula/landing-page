@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram } from "lucide-react";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return <header className="fixed top-0 left-0 right-0 z-50 bg-[#A8482C] shadow-sm">
@@ -32,14 +32,32 @@ const Header = () => {
             </a>
           </nav>
 
-          <Button className="hidden md:block bg-[#ffffff] hover:bg-[#C48751] hover:text-[#ffffff] text-[#F07B4C]">
-            <a href="https://wa.me/+554188618118?text=Olá,%20visitei%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20sessão%20de%20terapia!%20Obrigado" target="blank">Agendar sessão</a>
-          </Button>
+          <div className="hidden md:flex items-center gap-4">
+            <a href="https://www.instagram.com/psi.milenadepaula/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors">
+              <Instagram size={20} className="text-[#F07B4C]" />
+            </a>
+            <Button 
+              className="bg-[#ffffff] hover:bg-[#C48751] hover:text-[#ffffff] text-[#F07B4C]"
+              onClick={() => {
+                const phoneNumber = "+554188618118";
+                const message = "Ola, visitei seu site e gostaria de saber mais sobre as sessões de terapia!";
+                const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+              }}
+            >
+              Agendar sessão
+            </Button>
+          </div>
 
-          {/* Mobile Menu Button */}
-          <button className="md:hidden text-white z-50" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Mobile Icons and Menu Button */}
+          <div className="md:hidden flex items-center gap-3">
+            <a href="https://www.instagram.com/psi.milenadepaula/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors">
+              <Instagram size={16} className="text-[#F07B4C]" />
+            </a>
+            <button className="text-white z-50" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -62,7 +80,16 @@ const Header = () => {
             <a href="#contact" className="block text-white hover:text-accent transition-colors py-2" onClick={() => setIsMenuOpen(false)}>
               Contato
             </a>
-            <Button className="w-full bg-white text-primary hover:bg-gray-50 mt-4">
+            <Button 
+              className="w-full bg-white text-primary hover:bg-gray-50 mt-4"
+              onClick={() => {
+                const phoneNumber = "+554188618118";
+                const message = "Ola, visitei seu site e gostaria de saber mais sobre as sessões de terapia!";
+                const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+                setIsMenuOpen(false);
+              }}
+            >
               Agendar sessão
             </Button>
           </nav>}

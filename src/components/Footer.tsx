@@ -1,4 +1,4 @@
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import GoogleMap from "./GoogleMap";
 const Footer = () => {
@@ -69,6 +69,10 @@ const Footer = () => {
               <a href="mailto:milenadepaula.psicologia@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Mail size={20} className="text-primary" />
                 <span className="text-foreground">milenadepaula.psicologia@gmail.com</span>
+              </a>
+              <a href="https://www.instagram.com/psi.milenadepaula/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
+                <Instagram size={20} className="text-primary" />
+                <span className="text-foreground">@psi.milenadepaula</span>
               </a>
             </div>
           </div>
