@@ -107,7 +107,7 @@ const AboutSection = () => {
           <div className="text-center mb-8">
             <h3 className="font-bold text-[#E8774D] mb-4 text-4xl">Milena de Paula - Psicóloga e Palestrante</h3>
             <p className="text-foreground max-w-2xl mx-auto text-lg">
-              Conheça um pouco mais sobre minha trajetória e abordagem terapêutica
+              Conheça o meu espaço de escuta, e onde a transformação acontece
             </p>
           </div>
         </div>
