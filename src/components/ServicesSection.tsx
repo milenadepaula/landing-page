@@ -60,10 +60,10 @@ const ServicesSection = () => {
     text: "Formação em Psicologia - Fae Centro Universitário"
   }, {
     icon: User,
-    text: "Pós Graduação em Psicologia Analítica - em andamento"
+    text: "Pós Graduação em Psicologia Analítica - concluído"
   }, {
     icon: User,
-    text: "Pós Graduação em Psicopatologia e Dependência Química - concluído."
+    text: "Pós Graduação em Psicopatologia e Dependência Química - concluído"
   }
                       ];
   return <section id="services" className="py-16 lg:py-24 bg-[#f9f9f9] to-muted overflow-x-hidden">
