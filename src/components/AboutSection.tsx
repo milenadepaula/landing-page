@@ -27,19 +27,19 @@ const AboutSection = () => {
     title: "Você sente que as pressões sociais e questões familiares influenciam suas emoções, suas escolhas e o modo como você se enxerga.",
   }];
   const galleryImages = [{
-    src: "/images/foto_clinica.jpg",
+    src: "/images/foto_clinica.jpeg",
     alt: "Ambiente terapêutico acolhedor",
     curiosity: "Sou apaixonada pela psicologia analítica. O que me conectou com essa abordagem, desde o primeiro contato, foi o convite a um mergulho profundo na alma humana uma escuta que ultrapassa o óbvio e o concreto. Trata-se de ir às profundezas da psique, em busca da totalidade do si-mesmo e de caminhos possíveis para a individuação."
   }, {
-    src: "/images/foto_consultorio_2.jpg",
+    src: "/images/foto_consultorio_2.jpeg",
     alt: "Espaço de tranquilidade",
     curiosity: "Ter encontrado a arte, mesmo que tardiamente, deu mais sentido à minha trajetória. Por meio da dança, experimento sensações inéditas e posso expressar, em movimento, sentimentos já conhecidos, e isso movimenta a minha alma."
   }, {
-    src: "/images/foto_recepcao.jpg",
+    src: "/images/foto_recepcao.jpeg",
     alt: "Vista relaxante",
     curiosity: "Sou uma leitora apaixonada por mitos, fábulas, política e histórias de mulheres que ousaram traçar caminhos próprios no mundo."
   }, {
-    src: "/images/foto_recepcao_2.jpg",
+    src: "/images/foto_recepcao_2.jpeg",
     alt: "Ambiente de bem-estar",
     curiosity: "Minha escuta é feita com tempo, profundidade e presença. A clínica para mim é encontro, processo e transformação. Não existe receita de bolo, porque cada escuta e cada história são únicas."
 }];
