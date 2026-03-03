@@ -41,7 +41,7 @@ const AboutSection = () => {
   }, {
     src: "/images/foto_recepcao_2.jpg",
     alt: "Ambiente de bem-estar",
-    curiosity: "Minha escuta é feita com tempo, profundidade e presença. A clínica para mim é encontro, processo e transformação. Não existe receita de bolo, porque cada escuta e cada história são únicas.
+    curiosity: "Minha escuta é feita com tempo, profundidade e presença. A clínica para mim é encontro, processo e transformação. Não existe receita de bolo, porque cada escuta e cada história são únicas."
 }];
 
   const [openCards, setOpenCards] = useState<number[]>([]);
