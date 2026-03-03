@@ -27,33 +27,21 @@ const AboutSection = () => {
     title: "Você sente que as pressões sociais e questões familiares influenciam suas emoções, suas escolhas e o modo como você se enxerga.",
   }];
   const galleryImages = [{
-    src: "/images/foto-milena-1.jpg",
+    src: "/images/foto_clinica.jpg",
     alt: "Ambiente terapêutico acolhedor",
     curiosity: "Sou apaixonada pela psicologia analítica. O que me conectou com essa abordagem, desde o primeiro contato, foi o convite a um mergulho profundo na alma humana uma escuta que ultrapassa o óbvio e o concreto. Trata-se de ir às profundezas da psique, em busca da totalidade do si-mesmo e de caminhos possíveis para a individuação."
   }, {
-    src: "/images/foto-milena-2.jpg",
+    src: "/images/foto_consultorio_2.jpg",
     alt: "Espaço de tranquilidade",
     curiosity: "Ter encontrado a arte, mesmo que tardiamente, deu mais sentido à minha trajetória. Por meio da dança, experimento sensações inéditas e posso expressar, em movimento, sentimentos já conhecidos, e isso movimenta a minha alma."
   }, {
-    src: "/images/foto-milena-3.jpg",
+    src: "/images/foto_recepcao.jpg",
     alt: "Vista relaxante",
     curiosity: "Sou uma leitora apaixonada por mitos, fábulas, política e histórias de mulheres que ousaram traçar caminhos próprios no mundo."
   }, {
-    src: "/images/foto-milena-4.jpg",
+    src: "/images/foto_recepcao_2.jpg",
     alt: "Ambiente de bem-estar",
-    curiosity: "Minha escuta é feita com tempo, profundidade e presença. A clínica para mim é encontro, processo e transformação. Não existe receita de bolo, porque cada escuta e cada história são únicas."
-  }, {
-    src: "/images/foto-milena-5.jpg",
-    alt: "Consultório confortável",
-    curiosity: "Tenho várias plantas em casa e cuido delas como quem cuida de si: com paciência, observação e afeto. E tenho dois filhos de quatro patas, que são o meu amor transbordando para fora do peito."
-  }, {
-    src: "/images/foto-milena-14.jpg",
-    alt: "Espaço de reflexão",
-    curiosity: "Amo quando um paciente diz: \"Tive um sonho estranho essa noite...\". Sei que ali se revela uma mensagem importante do inconsciente. Os sonhos dizem o que a linguagem do dia nem sempre alcança."
-  }, {
-    src: "/images/foto-milena-15.jpg",
-    alt: "Espaço de reflexão",
-    curiosity: "Cresço com cada encontro, cada história e cada silêncio compartilhado com quem me procura."
+    curiosity: "Minha escuta é feita com tempo, profundidade e presença. A clínica para mim é encontro, processo e transformação. Não existe receita de bolo, porque cada escuta e cada história são únicas.
 }];
 
   const [openCards, setOpenCards] = useState<number[]>([]);
