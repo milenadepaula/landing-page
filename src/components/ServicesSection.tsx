@@ -107,7 +107,7 @@ const ServicesSection = () => {
         <div className="mb-20 animate-fade-in">
           <div className="max-w-5xl mx-auto">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-              <img alt="Psicóloga em ambiente relaxante" src="/images/foto-milena-12.jpg" className="w-full h-80 lg:h-96 object-cover" />
+              <img alt="Psicóloga em ambiente relaxante" src="/images/foto-milena-2.jpg" className="w-full h-80 lg:h-96 object-cover" />
               <div className="absolute bottom-8 left-8 text-primary-foreground bg-[#00282A] p-4 rounded-lg">
                 <h3 className="text-2xl lg:text-3xl font-bold">Milena de Paula</h3>
                 <p className="text-lg opacity-90">Psicóloga CRP 08/39929</p>
