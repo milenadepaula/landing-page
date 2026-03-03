@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import GoogleMap from "./GoogleMap";
 const Footer = () => {
   const handleOpenMaps = () => {
-    const address = "Av. Rep. Argentina, 2403 - Água Verde, Curitiba - PR, 80240-210";
+    const address = "AR. Cel. Dulcídio, 2281 (casa) - Água Verde, Curitiba - PR, 80250-120";
     const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address)}`;
     window.open(mapsUrl, '_blank');
   };
