@@ -1,0 +1,32 @@
+
+.ambiente-swiper .swiper-pagination {
+  position: relative !important;
+  margin-top: 2rem;
+}
+
+.ambiente-swiper .swiper-pagination-bullet {
+  background-color: #AA6581;
+  opacity: 0.5;
+}
+
+.ambiente-swiper .swiper-pagination-bullet-active {
+  background-color: #F99FA9;
+  opacity: 1;
+}
+
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .ambiente-swiper {
+    overflow: visible;
+  }
+  
+  .swiper-button-prev-custom,
+  .swiper-button-next-custom {
+    position: static !important;
+    transform: none !important;
+  }
+}
