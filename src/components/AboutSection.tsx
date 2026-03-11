@@ -12,37 +12,33 @@ const AboutSection = () => {
     title: "Você sente necessidade de se conhecer melhor, transformar o que dói e viver de forma mais autêntica e integrada.",
   }, {
     number: "02",
-    title: "Você deseja um suporte profissional para melhorar a sua relação com a comida, com o corpo e com a própria imagem.",
+    title: "Você deseja suporte profissional para melhorar sua relação com o corpo, com a comida e com sua própria imagem.",
   }, {
     number: "03",
-    title: "Você busca um espaço seguro e acolhedor para que possa se sentir compreendida(o) e traçar o melhor caminho terapêutico.",
+    title: "Você busca um espaço seguro e acolhedor para ser escutada(o) e construir um caminho terapêutico possível para sua vida.",
   }, {
     number: "04",
-    title: "Você enfrenta desafios nos seus relacionamentos e precisa compreender melhor os seus padrões, para viver conexões mais saudáveis e genuínas.",
+    title: "Você enfrenta dificuldades em seus relacionamentos e deseja compreender melhor seus padrões para construir vínculos mais saudáveis.",
   }, {
     number: "05",
-    title: "Você sofre com a autocrítica e a autocobrança, percebendo que isso afeta sua qualidade de vida e sua forma de estar no mundo.",
+    title: "A autocrítica e a autocobrança têm sido intensas e começam a afetar sua qualidade de vida.",
   }, {
     number: "06",
-    title: "Você sente que as pressões sociais e questões familiares influenciam suas emoções, suas escolhas e o modo como você se enxerga.",
+    title: "As pressões sociais ou familiares influenciam suas emoções, suas escolhas e a forma como você se percebe.",
   }];
   const galleryImages = [{
-    src: "/images/foto_clinica.jpeg",
+    src: "/images/sala-terapia-curitiba.jpeg",
     alt: "Ambiente terapêutico acolhedor",
-    curiosity: "Sou apaixonada pela psicologia analítica. O que me conectou com essa abordagem, desde o primeiro contato, foi o convite a um mergulho profundo na alma humana uma escuta que ultrapassa o óbvio e o concreto. Trata-se de ir às profundezas da psique, em busca da totalidade do si-mesmo e de caminhos possíveis para a individuação."
   }, {
-    src: "/images/foto_consultorio_2.jpeg",
+    src: "/images/consultorio-psicologa-curitiba.jpeg",
     alt: "Espaço de tranquilidade",
-    curiosity: "Ter encontrado a arte, mesmo que tardiamente, deu mais sentido à minha trajetória. Por meio da dança, experimento sensações inéditas e posso expressar, em movimento, sentimentos já conhecidos, e isso movimenta a minha alma."
   }, {
-    src: "/images/foto_recepcao.jpeg",
+    src: "/images/psicologa-curitiba-consultorio.jpeg",
     alt: "Vista relaxante",
-    curiosity: "Sou uma leitora apaixonada por mitos, fábulas, política e histórias de mulheres que ousaram traçar caminhos próprios no mundo."
   }, {
-    src: "/images/foto_recepcao_2.jpeg",
-    alt: "Ambiente de bem-estar",
-    curiosity: "Minha escuta é feita com tempo, profundidade e presença. A clínica para mim é encontro, processo e transformação. Não existe receita de bolo, porque cada escuta e cada história são únicas."
-}];
+    src: "/images/consultorio-psicologia-curitiba.jpg",
+    alt: "Vista relaxante",
+  }];
 
   const [openCards, setOpenCards] = useState<number[]>([]);
 
@@ -57,9 +53,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-primary">
-            Como saber se este é o momento para
-            <br />
-            <span className="text-accent">iniciar a psicoterapia?</span>
+            <span className="text-accent">Talvez este seja o momento de iniciar a psicoterapia se…</span>
           </h2>
         </div>
 
@@ -82,10 +76,17 @@ const AboutSection = () => {
 
         <div className="text-center mt-16 animate-fade-in">
           <div className="rounded-2xl p-8 max-w-6xl mx-auto bg-[#D6C1AA]">
-            <h3 className="font-bold mb-4 text-primary-foreground text-xl">A psicoterapia é um espaço seguro para acolher suas dores, compreender sua história e construir caminhos de cura, autoconhecimento e transformação.</h3>
+            <h3 className="font-bold mb-4 text-primary-foreground text-xl">Se você se identificou com alguma dessas experiências, a psicoterapia pode ser um espaço importante de cuidado e compreensão.</h3>
             
-            <div className="flex justify-center gap-8 text-sm text-muted-foreground">
-              <span className="text-primary-foreground underline text-lg"><a href="https://wa.me/+5541988618118?text=Olá,%20visitei%20seu%20site%20e%20gostaria%20de%20saber%20mais%20informações%20sobre%20as%20sessões%20de%20terapia!%20Obrigado" target='_blank'>Agende sua primeira sessão</a></span>
+            <div className="flex justify-center mt-6">
+              <a 
+                href="https://wa.me/+5541988618118?text=Olá,%20visitei%20seu%20site%20e%20gostaria%20de%20saber%20mais%20informações%20sobre%20as%20sessões%20de%20terapia!%20Obrigado" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-white text-[#E8774D] font-medium text-lg px-8 py-3 rounded-md hover:bg-gray-50 transition-colors shadow-sm"
+              >
+                Agendar sessão
+              </a>
             </div>
           </div>
         </div>
@@ -93,9 +94,10 @@ const AboutSection = () => {
         {/* Seção da psicóloga - movida para antes do carrossel */}
         <div id="psicologia" className="mt-20 animate-fade-in">
           <div className="text-center mb-8">
-            <h3 className="font-bold text-[#E8774D] mb-4 text-4xl">Milena de Paula - Psicóloga e Palestrante</h3>
+            <h3 className="font-bold text-[#E8774D] mb-4 text-4xl">Conheça onde acontecem os atendimentos presenciais</h3>
             <p className="text-foreground max-w-2xl mx-auto text-lg">
-              Conheça o meu espaço de escuta, e onde a transformação acontece
+              Um espaço pensado para acolher sua escuta, com cuidado e acolhimento
+
             </p>
           </div>
         </div>
@@ -121,30 +123,6 @@ const AboutSection = () => {
                   <Collapsible open={openCards.includes(index)} onOpenChange={() => toggleCard(index)}>
                     <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
                       <img src={image.src} alt={image.alt} className="w-full h-64 object-cover transition-transform duration-300" />
-                      
-                      {/* Seta sobreposta */}
-                      <CollapsibleTrigger asChild>
-                        <button className={`absolute w-10 h-10 rounded-full text-white flex items-center justify-center hover:bg-[#E8774D] transition-all duration-300 shadow-lg z-10 ${
-                          openCards.includes(index) 
-                            ? 'top-4 right-4 bg-[#A8482C]/90 backdrop-blur-sm' 
-                            : 'bottom-4 right-4 bg-[#A8482C]'
-                        }`}>
-                          {openCards.includes(index) ? (
-                            <ChevronUp size={20} />
-                          ) : (
-                            <ChevronDown size={20} />
-                          )}
-                        </button>
-                      </CollapsibleTrigger>
-                      
-                      {/* Caixa de curiosidade que desliza */}
-                      <CollapsibleContent>
-                        <div className="absolute bottom-0 left-0 right-0 bg-[#D6C1AA] p-4 transform transition-transform duration-300 ease-out">
-                          <p className="text-[#00282A] text-sm font-medium leading-relaxed whitespace-pre-line">
-                            {image.curiosity}
-                          </p>
-                        </div>
-                      </CollapsibleContent>
                     </div>
                   </Collapsible>
                 </SwiperSlide>)}

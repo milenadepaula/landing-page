@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
             <h3 className="font-bold mb-4 text-2xl text-primary">Atendimento Online</h3>
             <p className="mb-6 text-foreground text-lg">
-              Sessões por videochamada, permitindo que você participe de qualquer lugar com privacidade e conforto.
+              Sessões por videochamada, permitindo que você participe de onde estiver, com privacidade e conforto.
             </p>
             <Button className="bg-[#E8774D] hover:bg-primary/90 text-primary-foreground text-sm"><a href="https://wa.me/+554188618118?text=Olá,%20visitei%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20sessão%20de%20terapia%20online!%20Obrigado" target="blank">Agendar Sessão</a></Button>
           </div>
@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
             <h3 className="font-bold mb-4 text-2xl text-primary">Atendimento Presencial</h3>
             <p className="mb-6 text-foreground text-lg">
-              Consultas presenciais em espaço acolhedor e equipado, localizado no bairro Água Verde.
+              Consultas presenciais em espaço acolhedor e equipado, localizado no bairro Água Verde, em Curitiba.
             </p>
             <Button className="bg-[#E8774D] hover:bg-primary/90 text-primary-foreground text-sm"><a href="https://wa.me/+554188618118?text=Olá,%20visitei%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20sessão%20de%20terapia%20presencial!%20Obrigado" target="blank">Agendar Sessão</a></Button>
           </div>
@@ -43,7 +43,7 @@ const Footer = () => {
         <div className="max-w-4xl mx-auto mb-12 animate-fade-in">
           <div className="text-center mb-8">
             <h3 className="font-bold text-primary mb-4 text-3xl">Localização do Consultório</h3>
-            <p className="text-foreground text-lg mb-4">Av. Rep. Argentina, 2403 - Água Verde, Curitiba - PR, 80240-210</p>
+            <p className="text-foreground text-lg mb-4">R. Cel. Dulcídio, 2281 (casa)  - Água Verde, Curitiba - PR, 80250-120</p>
             <p className="text-foreground text-lg mb-4">Horário de atendimento: Segunda à sexta, das 9h às 20h</p>
             <Button onClick={handleOpenMaps} className="bg-[#e8774d] hover:bg-primary/90 text-primary-foreground">
               Abrir rota no mapa
@@ -78,7 +78,7 @@ const Footer = () => {
           </div>
           
           <div className="text-center mt-8 pt-8 border-t border-border text-muted-foreground text-sm">
-            <p className="">© 2025 Milena de Paula Psicologia. Todos os direitos reservados. CRP 08/39929 | Desenvolvido por <a href="https://wa.me/5541988707816?text=Ol%C3%A1%2C%20Eduardo!%20Gostei%20de%20um%20site%20feito%20por%20voc%C3%AA%20e%20gostaria%20de%20saber%20mais!%20Muito%20obrigado%20e%20aguardo%20retorno!">Eduardo Skrock</a></p>
+            <p className="">© 2026 Milena de Paula Psicologia. Todos os direitos reservados. CRP 08/39929 | Desenvolvido por <a href="https://wwww.psicologiaemsite.com.br">Psicologia em Site</a></p>
           </div>
         </div>
       </div>
