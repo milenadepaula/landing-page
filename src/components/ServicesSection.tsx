@@ -32,7 +32,7 @@ const ServicesSection = () => {
       ]
     },
     {
-      title: "Relações e vínculos",
+      title: "Relações, identidade e experiências de vida",
       items: [
         { icon: Users, text: "Ciúmes" },
         { icon: Baby, text: "Dependência emocional" },
