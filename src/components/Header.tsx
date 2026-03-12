@@ -40,10 +40,10 @@ const Header = () => {
             <a href="#about" onClick={(e) => handleScroll(e, 'about')} className="text-white hover:text-gray-200 cursor-pointer transition-colors">
               Terapia
             </a>
-            <a href="#psicologia" onClick={(e) => handleScroll(e, 'psicologia')} className="text-white hover:text-gray-200 cursor-pointer transition-colors">
+            <a href="#services" onClick={(e) => handleScroll(e, 'services')} className="text-white hover:text-gray-200 cursor-pointer transition-colors">
               Sobre mim
             </a>
-            <a href="#services" onClick={(e) => handleScroll(e, 'services')} className="text-white hover:text-gray-200 cursor-pointer transition-colors">
+            <a href="#psicoterapia" onClick={(e) => handleScroll(e, 'psicoterapia')} className="text-white hover:text-gray-200 cursor-pointer transition-colors">
               Atuação
             </a>
             <a href="#faq" onClick={(e) => handleScroll(e, 'faq')} className="text-white hover:text-gray-200 cursor-pointer transition-colors">

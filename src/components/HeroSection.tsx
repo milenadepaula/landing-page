@@ -6,9 +6,8 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mx-0 py-[120px] my-0">
           <div className="animate-slide-in-left">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight text-primary px-0 mx-[5px]">          
-              <span className="text-accent my-0">
-                Psicoterapia com escuta sensível para quem deseja compreender a si mesmo
-              </span>
+              <span className="text-accent my-0">Psicoterapia com escuta sensível</span>  para quem deseja compreender a si mesmo
+              
             </h1>
             <p className="text-foreground mb-8 leading-relaxed mx-[5px] text-lg">Um espaço seguro para acolher sua história, suas emoções e sua identidade. Atendimento para adolescentes e adultos, presencial em Curitiba e também online. </p>
             <p className="text-foreground mb-8 leading-tight mx-[5px] text-lg">Psicóloga Clínica | CRP-08/39929</p>
