@@ -27,7 +27,7 @@ const AboutSection = () => {
     title: "As pressões sociais ou familiares influenciam suas emoções, suas escolhas e a forma como você se percebe.",
   }];
   const galleryImages = [{
-    src: "/images/sala-terapia-curitiba.jpeg",
+    src: "/images/sala-de-terapia-curitiba.jpeg",
     alt: "Ambiente terapêutico acolhedor",
   }, {
     src: "/images/consultorio-psicologa-curitiba.jpeg",
@@ -36,7 +36,13 @@ const AboutSection = () => {
     src: "/images/psicologa-curitiba-consultorio.jpeg",
     alt: "Vista relaxante",
   }, {
-    src: "/images/consultorio-psicologia-curitiba.jpg",
+    src: "/images/sala-terapia-curitiba.jpeg",
+    alt: "Vista relaxante",
+  }, {
+    src: "/images/foto_consultorio_agua_verde.jpeg",
+    alt: "Vista relaxante",
+  }, , {
+    src: "/images/consultorio-psicologa-curitiba.jpg",
     alt: "Vista relaxante",
   }];
 
@@ -97,48 +103,68 @@ const AboutSection = () => {
             <h3 className="font-bold text-[#E8774D] mb-4 text-4xl">Conheça onde acontecem os atendimentos presenciais</h3>
             <p className="text-foreground max-w-2xl mx-auto text-lg">
               Um espaço pensado para acolher sua escuta, com cuidado e acolhimento
-
             </p>
           </div>
         </div>
 
         {/* Photo Carousel */}
         <div id="ambiente" className="mt-12 animate-fade-in">
-          <div className="max-w-6xl mx-auto">
-            <Swiper modules={[Navigation, Pagination]} spaceBetween={20} slidesPerView={1} navigation={{
-            prevEl: '.swiper-button-prev-custom',
-            nextEl: '.swiper-button-next-custom'
-          }} pagination={{
-            clickable: true,
-            dynamicBullets: true
-          }} breakpoints={{
-            640: {
-              slidesPerView: 2
-            },
-            1024: {
-              slidesPerView: 3
-            }
-          }} className="ambiente-swiper">
-              {galleryImages.map((image, index) => <SwiperSlide key={index}>
-                  <Collapsible open={openCards.includes(index)} onOpenChange={() => toggleCard(index)}>
-                    <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                      <img src={image.src} alt={image.alt} className="w-full h-64 object-cover transition-transform duration-300" />
-                    </div>
-                  </Collapsible>
-                </SwiperSlide>)}
-            </Swiper>
-            
-            {/* Custom Navigation Buttons */}
-            <div className="flex justify-center items-center gap-4 mt-8">
-              <button className="swiper-button-prev-custom w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center hover:bg-accent transition-colors shadow-lg">
-                ←
-              </button>
-              <button className="swiper-button-next-custom w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center hover:bg-accent transition-colors shadow-lg">
-                →
-              </button>
+  <div className="max-w-6xl mx-auto px-4">
+    <Swiper 
+      modules={[Navigation, Pagination]} 
+      spaceBetween={24} 
+      slidesPerView={1} 
+      navigation={{
+        prevEl: '.swiper-button-prev-custom',
+        nextEl: '.swiper-button-next-custom'
+      }} 
+      pagination={{
+        clickable: true,
+        dynamicBullets: true
+      }} 
+      breakpoints={{
+        640: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      }} 
+      className="ambiente-swiper !pb-12" /* pb-12 adicionado para dar espaço às bolinhas de paginação */
+    >
+      {galleryImages.map((image, index) => (
+        <SwiperSlide key={index}>
+          <Collapsible open={openCards.includes(index)} onOpenChange={() => toggleCard(index)}>
+            {/* Container 'group' controla o hover. Fundo com a cor do site para acomodar a foto completa */}
+            <div className="group relative w-full h-64 md:h-72 overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 bg-[#FAEFED] cursor-pointer">
+              
+              {/* 1. Imagem Padrão (Preenche o card, com cortes) */}
+              <img 
+                src={image.src} 
+                alt={image.alt} 
+                className="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:opacity-0 z-10" 
+              />
+              
+              {/* 2. Imagem Completa (Sem cortes, visível no hover) */}
+              <img 
+                src={image.src} 
+                alt={image.alt} 
+                className="absolute inset-0 w-full h-full object-contain opacity-0 scale-95 transition-all duration-500 group-hover:opacity-100 group-hover:scale-100 p-2 z-20" 
+              />
+
             </div>
-          </div>
-        </div>
+          </Collapsible>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+    
+    {/* Custom Navigation Buttons adaptados para a paleta do site */}
+    <div className="flex justify-center items-center gap-6 mt-4">
+      <button className="swiper-button-prev-custom w-12 h-12 rounded-full bg-[#E57B5D] text-white flex items-center justify-center hover:bg-[#8A3A3B] transition-colors shadow-lg">
+        ←
+      </button>
+      <button className="swiper-button-next-custom w-12 h-12 rounded-full bg-[#E57B5D] text-white flex items-center justify-center hover:bg-[#8A3A3B] transition-colors shadow-lg">
+        →
+      </button>
+    </div>
+  </div>
+</div>
 
       </div>
     </section>;
